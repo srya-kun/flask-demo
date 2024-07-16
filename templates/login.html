@@ -1,9 +1,11 @@
-<html lang="en-US">
+<!DOCTYPE html>
+<html>
 
   
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login.css">
     <title>Encryptor</title>
   </head>
 
@@ -11,14 +13,37 @@
   <body>
     
     <div class="box">
-      <h1>Login</h1>
-      <form action="" method="POST">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="submit" value="Lol">
+      <div class="box1">
+        <h1>Log In</h1>
         
-      </form>
+        <div class="box2">
+          <form action="" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <!-- //todo: Might be useful in dynamic purposes <input type="submit" value="Log In">-->
+            <button id="loginbut"><a href="/templates/home.html">Log In</a></button>
+          </form>
+          <div class="forgot">
+            <p id="forgot1">
+              <a href="#">Forgot Username?</a>
+            </p>
+            <p id="forgot2">
+              <a href="#">Forgot Password?</a>
+            </p>
+          </div>
+          <div class="other">
+            <p id="other1">
+              <a href="/templates/signin.html">Sign Up</a>
+            </p>
+          </div>
+  
+        </div>
+
+      </div>
+      
     </div>
+    
+    
     
   </body>
 </html>
